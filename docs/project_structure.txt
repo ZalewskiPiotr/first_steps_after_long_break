@@ -1,0 +1,32 @@
+The project structure following by ChatGPT
+
+my_project/
+│-- my_package/           # Main package (your source code)
+│   │-- __init__.py       # Marks as a package
+│   │-- module1.py        # Your first module
+│   │-- module2.py        # Another module
+│   ├── subpackage/       # A subpackage (if needed)
+│       │-- __init__.py
+│       │-- submodule.py
+│
+│-- tests/                # Unit tests
+│   │-- test_module1.py
+│   │-- test_module2.py
+│
+│-- docs/                 # Documentation (optional)
+│   │-- index.md          # Main doc file
+│
+│-- scripts/              # Scripts for automation (optional)
+│   │-- deploy.py
+│   │-- setup_db.py
+│
+│-- data/                 # Data files (if any)
+│   │-- sample.csv
+│   │-- input.json
+│
+│-- .gitignore            # Ignore unnecessary files
+│-- requirements.txt      # Dependencies
+│-- setup.py              # Installable package setup (if needed)
+│-- README.md             # Project description
+│-- config.yaml           # Configuration file (optional)
+│-- main.py               # Entry point (if applicable)

@@ -1,0 +1,20 @@
+Best Practices for Python Project Structure following by ChatGPT
+
+✅ Use Virtual Environments
+Keep dependencies isolated with venv or poetry.
+sh
+python -m venv venv
+source venv/bin/activate  # (Mac/Linux)
+venv\Scripts\activate     # (Windows)
+
+✅ Follow a Naming Convention
+Use snake_case for file names and PascalCase for classes.
+
+✅ Separate Business Logic & Configuration
+Keep secrets/configs in .env or config.yaml.
+
+✅ Write Tests
+Store them in the /tests directory and use pytest.
+
+✅ Document Everything
+Use README.md for a project overview and docstrings for functions.
