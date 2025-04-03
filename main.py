@@ -1,4 +1,6 @@
 from examples import numeric_types as num_types
+from examples import boolean_types
+from examples import strings
 
 
 def run_numeric_types_script():
@@ -24,6 +26,31 @@ def run_numeric_types_script():
     print("-----------------------------------------------------------------------------------------------------------")
     print("--------------------------------- STOP run_numeric_types_script -------------------------------------------")
 
+def run_boolean_types_script():
+    print("***********************************************************************************************************")
+    print("-------------------------------- START run_boolean_types_script -------------------------------------------")
+    print("-----------------------------------------------------------------------------------------------------------")
+    boolean_types.convert_to_boolean()
+    boolean_types.show_boolean_values()
+    print("-----------------------------------------------------------------------------------------------------------")
+    print("--------------------------------- STOP run_boolean_types_script -------------------------------------------")
+
+def run_strings_script():
+    print("***********************************************************************************************************")
+    print("-------------------------------- START run_strings_script -------------------------------------------")
+    print("-----------------------------------------------------------------------------------------------------------")
+    example_sentence: str = "It is a cool sentence for make examples how to use 'strings' in Python"
+    strings.operations_on_string(example_sentence)
+    strings.change_string_to_asterix(example_sentence)
+
+    strings.join_string(example_sentence, "An another sentence")
+    strings.check_substring("It is long string", "long")
+    strings.check_substring("It is long string", "nolong")
+    print("-----------------------------------------------------------------------------------------------------------")
+    print("--------------------------------- STOP run_strings_script -------------------------------------------")
+
 
 if __name__ == "__main__":
     run_numeric_types_script()
+    run_boolean_types_script()
+    run_strings_script()
