@@ -31,3 +31,7 @@ def join_string(data: str, another_data: str):
 
 def check_substring(data: str, subdata: str):
     print("Check if '{0}' exists in '{1}': {2}".format(subdata, data, subdata in data))
+
+def replace_string(data: str, old_value: str, new_value: str):
+    print(f"Old string: {data}")
+    print(f"NEW string: {data.replace(old_value, new_value)}")

@@ -1,6 +1,8 @@
 from examples import numeric_types as num_types
 from examples import boolean_types
 from examples import strings
+from examples import lists
+from examples.lists import show_length, delete_element
 
 
 def run_numeric_types_script():
@@ -46,11 +48,22 @@ def run_strings_script():
     strings.join_string(example_sentence, "An another sentence")
     strings.check_substring("It is long string", "long")
     strings.check_substring("It is long string", "nolong")
+
+    strings.replace_string("This is OLD string", "OLD", "NEW")
     print("-----------------------------------------------------------------------------------------------------------")
     print("--------------------------------- STOP run_strings_script -------------------------------------------")
 
+def run_lists_script():
+    lists.show_list()
+    lists.add_value("fifty five")
+    lists.show_length()
+    lists.delete_element('two')
+    lists.replace_element('four', 'NEW FOUR')
+    lists.insert_value()
+    lists.extend_list(['ext_1', 'ext_2', 'ext_3'])
 
 if __name__ == "__main__":
     run_numeric_types_script()
     run_boolean_types_script()
     run_strings_script()
+    run_lists_script()
