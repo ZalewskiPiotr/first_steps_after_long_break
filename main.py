@@ -2,7 +2,8 @@ from examples import numeric_types as num_types
 from examples import boolean_types
 from examples import strings
 from examples import lists
-from examples.lists import show_length, delete_element
+from examples import tuples
+from examples import dictionary
 
 
 def run_numeric_types_script():
@@ -62,8 +63,21 @@ def run_lists_script():
     lists.insert_value()
     lists.extend_list(['ext_1', 'ext_2', 'ext_3'])
 
+def run_tuples_list():
+    tuples.show_tuple_list()
+    tuples.convert_to_list()
+
+def run_dictionary_script():
+    dictionary.show_dictionary()
+    dictionary.get_value("age")
+    dictionary.get_value("skills")
+    dictionary.show_keys()
+    dictionary.add_item("gender", "male")
+
 if __name__ == "__main__":
     run_numeric_types_script()
     run_boolean_types_script()
     run_strings_script()
     run_lists_script()
+    run_tuples_list()
+    run_dictionary_script()
