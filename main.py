@@ -4,6 +4,8 @@ from examples import strings
 from examples import lists
 from examples import tuples
 from examples import dictionary
+from examples import functions
+from examples import lambda_script
 
 
 def run_numeric_types_script():
@@ -74,6 +76,23 @@ def run_dictionary_script():
     dictionary.show_keys()
     dictionary.add_item("gender", "male")
 
+def run_functions_script():
+    functions.show_kids_names("kid1", "kid2")
+
+    # I want to check if the value of a variable changes after returning from a function. The function changes the
+    # value of the variable
+    example_name: str = "Piotr"
+    functions.just_show_value(name = example_name)
+    print(f"The name after returning from a function: {example_name}")
+
+    functions.show_keywords_arguments(kid1 = "John", kid2 = "Ana", kid3 = "Marta")
+
+    functions.show_default_parameter_value()
+    functions.show_default_parameter_value("Piter")
+
+def run_lambda_script():
+    lambda_script.show_lambda(5, 8)
+
 if __name__ == "__main__":
     run_numeric_types_script()
     run_boolean_types_script()
@@ -81,3 +100,5 @@ if __name__ == "__main__":
     run_lists_script()
     run_tuples_list()
     run_dictionary_script()
+    run_functions_script()
+    run_lambda_script()
