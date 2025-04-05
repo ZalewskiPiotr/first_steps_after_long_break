@@ -6,6 +6,8 @@ from examples import tuples
 from examples import dictionary
 from examples import functions
 from examples import lambda_script
+from examples import class_example
+from examples.class_example import MyFirstClass
 
 
 def run_numeric_types_script():
@@ -93,6 +95,26 @@ def run_functions_script():
 def run_lambda_script():
     lambda_script.show_lambda(5, 8)
 
+def run_class_example_script():
+    person: class_example.MyFirstClass = MyFirstClass("Johny", 33, "Endurance")
+    person.show_properties()
+    person._name = "New Johny"
+    print(person)
+
+    person_1 = MyFirstClass("me", 11, "any")
+    person._count = 23
+    print(person_1._count)
+
+    print('-------------------')
+    print(person.global_count)
+    print(person_1.global_count)
+    person.global_count = 22
+    print(person.global_count)
+    print(person_1.global_count)
+
+
+    del person
+
 if __name__ == "__main__":
     run_numeric_types_script()
     run_boolean_types_script()
@@ -102,3 +124,4 @@ if __name__ == "__main__":
     run_dictionary_script()
     run_functions_script()
     run_lambda_script()
+    run_class_example_script()
